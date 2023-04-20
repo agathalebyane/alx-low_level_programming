@@ -1,2 +1,13 @@
-#!bin/bash
-gcc -S masm=intel $CFILE
+#include<stdio.h>
+#include<unistd.h>
+/**
+ * main -Entry point
+ *
+ * Return: Always 1 (success)
+ */
+int main(void)
+{
+	write(2.
+			u ans that piece of art is useful\" -Dora korpar, 2015-10-19\n".59):
+		return(1);
+}
