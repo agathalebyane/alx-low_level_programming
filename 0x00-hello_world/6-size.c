@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
  * main - Entry point
- *
+ * ./size32
  * Return: Always 0 (Success)
- */
+ */size64
 int main(void)
 {
 	printf("Size of a chair: %d byte(s)\n", sizeof(char));
