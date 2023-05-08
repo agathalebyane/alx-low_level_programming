@@ -1,23 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
 
 /**
- * _memcpy - Copies n bytes from memory area src to memory area dest.
+ * main - Entry point
  *
- * @dest: Pointer to the destination memory area.
- * @src: Pointer to the source memory area.
- * @n: Number of bytes to be copied.
- *
- * Return: Pointer to dest.
+ * Return: Always 0 (Success)
  */
-char *_memcpy(char *dest, char *src, unsigned int n)
+int main(void)
 {
-	char *pdest = dest;
-	const char *psrc = src;
+    char *buffer = malloc(sizeof(char) * 10); /* allocate memory for buffer */
+    if (buffer == NULL) /* check if allocation was successful */
+    {
+        printf("Error: Unable to allocate memory\n");
+        return 1;
+    }
 
-	while (n--)
-	{
-		*pdest++ = *psrc++;
-	}
+    _memset(buffer, 'A', 10); /* fill buffer with 'A' */
+    for (unsigned int i = 0; i < 10; i++)
+    {
+        printf("%c ", buffer[i]); /* print each character in buffer */
+    }
+    printf("\n");
 
-	return (dest);
+    free(buffer); /* free memory allocated for buffer */
+
+    return 0;
 }
