@@ -1,29 +1,20 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include "main.h"
-
+ #include "main.h"
 /**
- * main - Entry point
+ * _memset - fill a block of memory with a specific value
+ * @s: starting address of memory to be filled
+ * @b: the desired value
+ * @n: number of bytes to be changed
  *
- * Return: Always 0 (Success)
+ * Return: changed array with new value for n bytes
  */
-int main(void)
+char *_memset(char *s, char b, unsigned int n)
 {
-    char *buffer = malloc(sizeof(char) * 10); /* allocate memory for buffer */
-    if (buffer == NULL) /* check if allocation was successful */
-    {
-        printf("Error: Unable to allocate memory\n");
-        return 1;
-    }
+	int i = 0;
 
-    _memset(buffer, 'A', 10); /* fill buffer with 'A' */
-    for (unsigned int i = 0; i < 10; i++)
-    {
-        printf("%c ", buffer[i]); /* print each character in buffer */
-    }
-    printf("\n");
-
-    free(buffer); /* free memory allocated for buffer */
-
-    return 0;
+	for (; n > 0; i++)
+	{
+		s[i] = b;
+		n--;
+	}
+	return (s);
 }
