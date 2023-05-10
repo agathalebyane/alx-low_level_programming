@@ -15,14 +15,5 @@ void _puts_recursion(char *s)
 	printf("%c", *s); /* Print the current character */
 	_puts_recursion(s + 1); /* Call function recursively with next character */
 }
-/**
- * main - Entry point of the program
- * Return: 0 (Success)
- */
-int main(void)
-{
-	char str[] = "Hello, World!";
-	_puts_recursion(str);
 
-	return (0);
-}
+return: (0);
