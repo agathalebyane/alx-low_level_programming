@@ -2,12 +2,12 @@
 #include "main.h"
 
 /**
- * *string_nconcat - link n bytes of  string to another string
- * @s1: string to add to
- * @s2: string to link from
- * @n: number of bytes from s2 to link to s1
+ * *string_nconcat - links n bytes of string to another string
+ * @s1: The string to attach to
+ * @s2: The string to link from
+ * @n: The number of bytes from s2 to link to s1
  *
- * Return: pointer to the resulting string
+ * Return: The pointers to the resulting string
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
@@ -42,4 +42,4 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	s[i] = '\0';
 
 	return (s);
-
+}
